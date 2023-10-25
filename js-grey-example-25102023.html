@@ -1,0 +1,223 @@
+﻿<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css" media="all">
+.classroom {background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH5wkKCAQvZJaqagAAA7RJREFUSMflls+LW1UUxz/35eXHZEhScZp0OhValLRVRlG7FCy1U8QBK1QLBTe6ctnp3oX/QFUQdOXKHyAWK1ikQmGk/gIRpA5UI9SKNUkns5hJ6iTNe+8eF3lJ7su7SWbVTR8kj3fuved7fn7PhfvykW/vIdaV3lvJJaCYL3Lnv0s4if0gMtw1+CMiM+US2Rw/1xcrFB43mXGWcYJ1BSBfcxHhZNw8m8k2I3Z4RgGKL9WLvOSGoiLAuk7xRatEQmlEJOKNEpBQIBhrIiBi2GB63pP6onglt0nJDSBgN4Br2nRDz/JG6ylQvhHxUKWMuKr1CIAZ3vCtdXjW5cjsz5RoDTa5gxAIKBFAgxhK0fH4isRBImujudA93caSE9GtRxVpe95EdlK/E1ed8Uva7tFOwUTsHTEeWCaDag3eNkf3LnJ0zyJ423ajptgbybG9kMwg9PL/9rPnOPv4ywC8c+1zVr57D5QTrXTzUYYBapzHYmtMw5hOk1PlE4PVU+UT0GlOcVFiIsdauMaBGTfNcvkYLxw8RiaZgXSeC5VvBjsuVC5DOk/GTbP06HGWDh8n5WYsTGYLtZ0TQYRCOkc36CJAIZOn022zsnqeize+RylY/fsncDPkZgp4voeIJj+TZ8NrT6xH14pp9HG9WSObmgWE21s1uNuiXDxEPp0FoPzgASr16zRE85ebBYSNrSqoxAReHQVWYY77xaADUqksHa+NLwHPLTzJp8+/xe50LnJsvdPkzOU3udas4SiHZDKL190GZ3y3ujECYQj62MIi+/IlvMBnT6bAx8+ctSopZvJcOfkup6+ep97eJDmf4NbWbSr//AqOstawEy136YVZBByX/YV5vMBHAQcL+6Zy1eHCAkoJXuDz0APzkHCneGwtaOGXf9fQohFgfbPK9eoaYsyofospUSgFa80q1btboDWOcowQxtvJnUR/9WZt8NVo1fmt8eeQBERAS/86YdSRjlLuKDeICSyWluoXmVh4MNAjY3AUwAKqoszlRtsozHHsWhMd+rFFrw2d7VCpDEOb3QVKTQ91j65VuNnIjciYKaVAwcqR11l5+tWI4lxqlr3vL9HWbRAVY+II8CPJDh+WfichwxKyxDtmwBN3PmLu6o8oZ2hs0knywa4/kKSPL/BwsjO89BnTqYHAnPJ4LX1r+tgdHdudGkH3B/zmMIc+cFognTFIDCBgvVePq+BXKLpzfIXLAXYKa5vzfu83usfJhAYF3PQ3WHazNHpGfHbvLvTBJ9ynz//AKt1F2ZzNLgAAAABJRU5ErkJggg==); display: inline; background-repeat: no-repeat; background-size: contain; background-position: left; border-radius:15px; margin: 5px}
+.zoom{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH5wkKCAkhNoD5IAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAACH0lEQVRIx83XT0hUURTH8c99jVlkhaZB9A/a9A+iosSWFUJEEEGLoKJtb+GmTUF7bVG7YiKkZbQMWpT92QWFSIUQFkJCSGZZQRSUmbfFaIyDozM1jv3gwuOee8/3nnfvue+dYFLZSBomn5vQgmPYhSYEpWkcw3iCm+iRhk+FjDClIxsDzuI01quMXuKyNFzJ70ymRMo9dFQQCptwWTZe/xNkXsQJ7mOfudVVaUhzEed0vgpQOC0b23IRZ+NKPMcq1dEr7E2wv4pQ2IidCY6rvloTNM8DeFsGDdNZNjfQUEuMM3sYi/R+5PvPMq4YVmaKWboOUV9DnO2aivR/4fAd3n4ruL/y82aqkqSYwxWLqKth6Sxt+UJ2NdKxZwIWc/PO7OTEluILTiq1aQfX5qCnNtN9lEstrKsrPj5TKfBY5NxuOpqnbsOcRzweqa8tfXxinvT/gUOZjmoX0NnHo+F/BI/H8sCZhP4RWm9z5B4jP1i84C9OdWcfbVv5VcICksDX0VwY38e49TrXli0sPifIxjFMu7YdTSypmR0cMPiVgS8Fhlh0z15k8BmN01mfvS9zo0PJB+VDgu4ZHZXTSldvghvzkE0PEjzEUBWh/ehJpOEdrlURfE0ahibzuB0PqgDtlIaL+T/0o9LQiq45hF6fqFDIxrwShskyph0nsaZCwIGJ13th9kzLxg3YgwPYjtVlfFB+4Q2e4i4eS8NgYdH2Gw7LkUCJLcZIAAAAAElFTkSuQmCC); display: inline; background-repeat: no-repeat; background-size: contain; background-position: left; border-radius:15px; margin: 5px}
+.meet{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAZCAYAAAAmNZ4aAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH5wkKBzk58fYQuAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAACUklEQVRIx72WTWgTQRiGn9luGhttjDXWH2ItWgWxF8HgVXtIoNqDEkMVQYp48qYXheJJxYP25FVFkIIQRBDELeLBoxbBW6w0pVhDU6kSa3/dnfWQbNzmp27SXT8YlpmdnWff+d5vGEGNmE12n92cHHvUFFwR1B8C+Aj0ixjj1SYo9k6uJ2o9rxtzzcOYwg80N9B8wBFgyBxZzbBCtXe2v3lPrieaBG7jTmwrqodUHBIapOLtgK6UKb0KPMXt+As9A3wC3qo2paeAu3gRBegV4F5xxGcpvgw88wApRQyDVHzYBi3kOBM71msYS/crbFnIjAGYDgBq1cqQvqCaOv5Fh0jF+r3X0ksC6bc8ULK7MH5d2n/nXF/kyVcH0NdAq71WPsy10J/t4nP7rvKlAebFgZv6crEEyiMPHB4bVCfWopoj+IAZIGSNvcy30pfuRAb80LG1KlhxNaMChqbDnEh3IhvJTaPQgfEIj79tcTR9/WAFcssqFzK70b4HQZH/BxzNHCL7E7KLimOoK+DRcAcEdZiahYWVUh062Kj1HhESVAX2hCEUqCdDbplLQKTNMdzdcpIm7AwVmrn2gaf+1vUaCkwlH34eIRU3HfhktYC2jaA2wY/52h9NTk/VeLO4Se598Qr+eRYIIFChvNUPG3wTCHYALRXLSylrmUYgzEDD224CqpIFDgKjQLd3Oa7uIR04Cjy075LXYCsWSGgXgcHij+QVj1ULQBRvIJDQbgEngdMqMAns8wg8UzJnQrOuQZpVCueBB0CXAwfXo/QdcIOEVnXNP5D3qvrCgnpyAAAAAElFTkSuQmCC); display: inline; background-repeat: no-repeat; background-size: contain; background-position: left; border-radius:15px; margin: 5px}
+html {font-family: sans-serif}
+body {background: #536878; color: #fff; padding: 12px}
+a {text-decoration: none; color: #fff; padding: 0; display: block}
+p {padding: 20px; line-height: 32px; text-shadow: 1px 1px 4px #000; line-height: 16px; font-size: 32px}
+div {font-size: 32px; border-radius: 15px; background: #708090}
+table {padding: 6px; padding: 0}
+td:nth-child(1) {width: 1%; font-size: 34px; font-family: sans-serif-light; padding: 10px; padding-bottom: 10px; font-style: italic; font-weight: bold; color: #dcdcdc}
+td:nth-child(2) {width: 1%; font-size: 40px; text-align: center}
+td:nth-child(3) {font-size: 42px; font-weight: bold; margin-left: 3px; text-shadow: 3px 7px 3px #000; letter-spacing: 0.1px}
+td:nth-child(4) {width: 1%; font-size: 52px; text-align: center}
+td:nth-child(5) {width: 1%; font-size: 52px; text-align: center}
+td:nth-child(6) {width: 1%; font-size: 46px; text-align: center; padding-bottom: 15px}
+td {padding: 10px; text-align: left;  text-shadow: 1px 5px 4px #000; padding-top: 15px; color: #fffaf0; vertical-align: bottom; border-radius: 0}
+td:hover {background: #536878; border-collapse: separate; border: 1px solid green; border-radius:15px; text-shadow: none; padding: 6px}
+td.footer:hover {background: #ffa500; color: #000; border-collapse: collapse; border: 4px solid #fff; border-radius:15px; text-shadow: none; padding: 6px}
+td.transparent {color: #708090; text-shadow: 1px 1px 2px #fff; font-style: italic; font-family: sans-serif-light}
+td.transparent:hover {padding: 8px}
+td:nth-child(1).footer {font-size: 46px; font-family: sans-serif-light; padding: 25px; padding-bottom: 10px; text-shadow: 4px 6px 8px #000; line-height: 64px}
+td:nth-child(1).about {font-size: 30px; font-family: sans-serif-light; padding: 25px; padding-bottom: 10px; text-shadow: 1px 1px 4px #000}
+#head {text-align: left; font-weight: bold; text-shadow: 1px 4px 5px #000; padding-top: 22px; color: #fffaf0}
+.hidden {display: none}
+tr {background-color: #536878; background-image: linear-gradient(to bottom right, #708090, #536878)}
+tr.footer {background-color: #708090; background-image: none}
+.n {font-style: normal}
+.phead {text-align: left; font-weight: bold; text-shadow: 1px 5px 4px #000; padding-top: 26px; color: #dcdcdc; font-style: italic}
+@keyframes blinker { 50% { opacity: 0; } }
+</style>
+<body>
+
+<div id="monday"><p id="head"></div>
+<div><p class="phead">Mon 23<br><br>
+<table>
+<tr><td>09:00<td class="b10900">🔔<td>Subject-1<td><a href="https://classroom.local/c/classlink?cjc=classcode"><b class="classroom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://meet.local/meetcode"><b class="meet">&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://lib.local/book.pdf">📚</a>
+<tr><td>09:50<td class="b10950">🔔<td class="transparent">Subject-2<td><td><td>
+<tr><td>10:45<td class="b11045">🔔<td>Subject-1<td><a href="https://classroom.local/c/classlink?cjc=classcode"><b class="classroom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://meet.local/meetcode"><b class="meet">&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://lib.local/book.pdf">📚</a>
+<tr><td>11:35<td class="b11135">🔔<td class="transparent">Subject-2<td><td><td>
+<tr><td>12:40<td class="b11240">🔔<td>Subject<td><a href="https://classroom.local/c/classlink?cjc=classcode"><b class="classroom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://meet.local/meetcode"><b class="meet">&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td>
+<tr><td>13:30<td class="b11330">🔔<td>Subject<td><a href="https://classroom.local/c/classlink?cjc=classcode"><b class="classroom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://meet.local/meetcode"><b class="meet">&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://lib.local/book.pdf">📚</a>
+<tr><td>14:25<td class="b11425">🔔<td>Subject-1<td><a href="https://classroom.local/c/classlink?cjc=classcode"><b class="classroom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://meet.local/meetcode"><b class="meet">&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://lib.local/book.pdf">📚</a>
+<tr><td>15:15<td class="b11515">🔔<td class="transparent">Subject-2<td><td><td>
+</table>
+</div>
+
+<div id="tuesday"><p class="phead">Tue 24<br><br>
+<table>
+<tr><td>09:00<td class="b10900">🔔<td>Subject-1<td><a href="https://classroom.local/c/classlink?cjc=classcode"><b class="classroom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://meet.local/meetcode"><b class="meet">&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://lib.local/book.pdf">📚</a>
+<tr><td>09:50<td class="b10950">🔔<td class="transparent">Subject-2<td><td><td>
+<tr><td>10:45<td class="b11045">🔔<td>Subject-1<td><a href="https://classroom.local/c/classlink?cjc=classcode"><b class="classroom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://meet.local/meetcode"><b class="meet">&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://lib.local/book.pdf">📚</a>
+<tr><td>11:35<td class="b11135">🔔<td class="transparent">Subject-2<td><td><td>
+<tr><td>12:40<td class="b11240">🔔<td>Subject<td><a href="https://classroom.local/c/classlink?cjc=classcode"><b class="classroom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://meet.local/meetcode"><b class="meet">&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td>
+<tr><td>13:30<td class="b11330">🔔<td>Subject<td><a href="https://classroom.local/c/classlink?cjc=classcode"><b class="classroom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://meet.local/meetcode"><b class="meet">&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://lib.local/book.pdf">📚</a>
+<tr><td>14:25<td class="b11425">🔔<td>Subject-1<td><a href="https://classroom.local/c/classlink?cjc=classcode"><b class="classroom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://meet.local/meetcode"><b class="meet">&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://lib.local/book.pdf">📚</a>
+<tr><td>15:15<td class="b11515">🔔<td class="transparent">Subject-2<td><td><td>
+</table>
+</div>
+
+<div id="wednesday"><p class="phead">Wed 25<br><br>
+<table>
+<tr><td>09:00<td class="b10900">🔔<td>Subject-1<td><a href="https://classroom.local/c/classlink?cjc=classcode"><b class="classroom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://meet.local/meetcode"><b class="meet">&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://lib.local/book.pdf">📚</a>
+<tr><td>09:50<td class="b10950">🔔<td class="transparent">Subject-2<td><td><td>
+<tr><td>10:45<td class="b11045">🔔<td>Subject-1<td><a href="https://classroom.local/c/classlink?cjc=classcode"><b class="classroom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://meet.local/meetcode"><b class="meet">&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://lib.local/book.pdf">📚</a>
+<tr><td>11:35<td class="b11135">🔔<td class="transparent">Subject-2<td><td><td>
+<tr><td>12:40<td class="b11240">🔔<td>Subject<td><a href="https://classroom.local/c/classlink?cjc=classcode"><b class="classroom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://meet.local/meetcode"><b class="meet">&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td>
+<tr><td>13:30<td class="b11330">🔔<td>Subject<td><a href="https://classroom.local/c/classlink?cjc=classcode"><b class="classroom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://meet.local/meetcode"><b class="meet">&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://lib.local/book.pdf">📚</a>
+<tr><td>14:25<td class="b11425">🔔<td>Subject-1<td><a href="https://classroom.local/c/classlink?cjc=classcode"><b class="classroom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://meet.local/meetcode"><b class="meet">&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://lib.local/book.pdf">📚</a>
+<tr><td>15:15<td class="b11515">🔔<td class="transparent">Subject-2<td><td><td>
+</table>
+</div>
+
+<div id="thursday"><p class="phead">Thu 26<br><br>
+<table>
+<tr><td>09:00<td class="b10900">🔔<td>Subject-1<td><a href="https://classroom.local/c/classlink?cjc=classcode"><b class="classroom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://meet.local/meetcode"><b class="meet">&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://lib.local/book.pdf">📚</a>
+<tr><td>09:50<td class="b10950">🔔<td class="transparent">Subject-2<td><td><td>
+<tr><td>10:45<td class="b11045">🔔<td>Subject-1<td><a href="https://classroom.local/c/classlink?cjc=classcode"><b class="classroom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://meet.local/meetcode"><b class="meet">&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://lib.local/book.pdf">📚</a>
+<tr><td>11:35<td class="b11135">🔔<td class="transparent">Subject-2<td><td><td>
+<tr><td>12:40<td class="b11240">🔔<td>Subject<td><a href="https://classroom.local/c/classlink?cjc=classcode"><b class="classroom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://meet.local/meetcode"><b class="meet">&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td>
+<tr><td>13:30<td class="b11330">🔔<td>Subject<td><a href="https://classroom.local/c/classlink?cjc=classcode"><b class="classroom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://meet.local/meetcode"><b class="meet">&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://lib.local/book.pdf">📚</a>
+<tr><td>14:25<td class="b11425">🔔<td>Subject-1<td><a href="https://classroom.local/c/classlink?cjc=classcode"><b class="classroom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://meet.local/meetcode"><b class="meet">&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://lib.local/book.pdf">📚</a>
+<tr><td>15:15<td class="b11515">🔔<td class="transparent">Subject-2<td><td><td>
+</table>
+</div>
+
+<div id="friday"><p class="phead">Fri 27<br><br>
+<table>
+<tr><td>09:00<td class="b10900">🔔<td>Subject-1<td><a href="https://classroom.local/c/classlink?cjc=classcode"><b class="classroom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://meet.local/meetcode"><b class="meet">&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://lib.local/book.pdf">📚</a>
+<tr><td>09:50<td class="b10950">🔔<td class="transparent">Subject-2<td><td><td>
+<tr><td>10:45<td class="b11045">🔔<td>Subject-1<td><a href="https://classroom.local/c/classlink?cjc=classcode"><b class="classroom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://meet.local/meetcode"><b class="meet">&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://lib.local/book.pdf">📚</a>
+<tr><td>11:35<td class="b11135">🔔<td class="transparent">Subject-2<td><td><td>
+<tr><td>12:40<td class="b11240">🔔<td>Subject<td><a href="https://classroom.local/c/classlink?cjc=classcode"><b class="classroom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://meet.local/meetcode"><b class="meet">&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td>
+<tr><td>13:30<td class="b11330">🔔<td>Subject<td><a href="https://classroom.local/c/classlink?cjc=classcode"><b class="classroom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://meet.local/meetcode"><b class="meet">&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://lib.local/book.pdf">📚</a>
+<tr><td>14:25<td class="b11425">🔔<td>Subject-1<td><a href="https://classroom.local/c/classlink?cjc=classcode"><b class="classroom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://meet.local/meetcode"><b class="meet">&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://lib.local/book.pdf">📚</a>
+<tr><td>15:15<td class="b11515">🔔<td class="transparent">Subject-2<td><td><td>
+</table>
+</div>
+
+<div><p class="phead">All the subjects<br><br>
+<table>
+<tr><td><td><td>Subject<td><a href="https://classroom.local/c/classlink?cjc=classcode"><b class="classroom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://meet.local/meetcode"><b class="meet">&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://lib.local/book.pdf">📚</a>
+<tr><td><td><td>Subject<td><a href="https://classroom.local/c/classlink?cjc=classcode"><b class="classroom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://meet.local/meetcode"><b class="meet">&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://lib.local/book.pdf">📚</a>
+<tr><td><td><td>Subject<td><a href="https://classroom.local/c/classlink?cjc=classcode"><b class="classroom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://meet.local/meetcode"><b class="meet">&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://lib.local/book.pdf">📚</a>
+<tr><td><td><td>Subject<td><a href="https://classroom.local/c/classlink?cjc=classcode"><b class="classroom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://meet.local/meetcode"><b class="meet">&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://lib.local/book.pdf">📚</a>
+<tr><td><td><td>Subject<td><a href="https://classroom.local/c/classlink?cjc=classcode"><b class="classroom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://meet.local/meetcode"><b class="meet">&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://lib.local/book.pdf">📚</a>
+<tr><td><td><td>Subject<td><a href="https://classroom.local/c/classlink?cjc=classcode"><b class="classroom">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://meet.local/meetcode"><b class="meet">&nbsp;&nbsp;&nbsp;&nbsp;</b></a><td><a href="https://lib.local/book.pdf">📚</a>
+</table>
+</div>
+
+<div><p class="phead">📎 More<br><br>
+<table>
+<tr class="footer"><td class="footer"><a href="https://lib.gov.local"><b class="n">📚</b> &nbsp;Gov. library</a>
+<tr class="footer"><td class="footer"><a href="http://lib.local"><b class="n">📚</b> &nbsp;Local lib</a>
+<tr class="footer"><td class="footer"><a href="http://school.local/lessons-shedule"><b class="n">🗓</b> &nbsp;Lessons shedule</a>
+<tr class="footer"><td class="footer"><a href="http://school.local/bells-shedule"><b class="n">🗓</b> &nbsp;Bells shedule</a>
+<tr class="footer"><td class="footer"><a href="https://journal.gov.local"><b class="n">📈</b> &nbsp;E-diary</a>
+<tr class="footer"><td class="footer"><a href="https://alarms local"><b class="n">📢</b> &nbsp;Alarms</a>
+</table>
+</div>
+
+<div><p class="phead">🗨 Changes log:<br><br>
+<table>
+<tr class="footer"><td class="about">
+21/10/23 -
+20/10/23 -
+</table>
+</div>
+
+<div class="hidden">
+</div>
+
+<script type="text/javascript">
+var labels = ["🔔", "<span id=\"g\">✔</span>", "📚", "📢", "☔", "💾", "👧🏻", "🧔🏻", "🌅", "🔆", "🗓", "🗨", "🌠"];
+
+const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const yearmnth = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+var startid = ["0900", "0950", "1045", "1135", "1240", "1330", "1425", "1515"];
+var start = ["09:00:00", "09:50:00", "10:45:00", "11:35:00", "12:40:00", "13:30:00", "14:25:00", "15:15:00"];
+var finish = ["09:45:00", "10:35:00", "11:30:00", "12:20:00", "13:25:00", "14:15:00", "15:10:00", "16:00:00"];
+var day, dayname, date, month, year, hour, minute, second;
+var currtime, dateobj, dateobj1, dateobj2, actualdate;
+var lesson, passed, blink;
+
+function addnull(data) {
+  if (data < 10) data = "0" + data;
+  return data;
+ }
+
+function dateinit() {
+ actualdate = new Date();
+ a = new Date();
+ day = a.getDay(); date = addnull(a.getDate()); month = addnull(a.getMonth()+1); year = a.getFullYear(); hour = addnull(a.getHours()); minute = addnull(a.getMinutes()); second = addnull(a.getSeconds());
+ dateobj1 = year +"/"+ month +"/"+ date+" ";
+ dateobj2 = hour +":"+ minute +":"+ second;
+ dateobj = dateobj1+dateobj2;
+// alert(dateobj);
+ return hour+":"+minute+" "+date+"/"+month+"/"+year;
+}
+
+function headinit() {
+var i, tmp, tmp2;
+ headstr = dateinit() + " &nbsp;&nbsp;";
+
+ for (i = 0; i < 7; i++) {
+  if (i === day) {headstr = headstr + weekdays[i] + ", " + date + " "; break;}
+  }
+for (i = 1; i < 13; i++) {
+  if (i === month) {headstr = headstr + yearmnth[i-1] ; break;}
+  }
+tmp2="<a href=\"#\" onClick=\"window.location.reload()\">";
+ tmp = ", study ";
+ if (day===0 || day===6) tmp = ", lazy ";
+ if (hour >=22 || hour < 6) headstr = tmp2 + "🌃 &nbsp;" + headstr + ", nite" + "</a>";
+ if (hour >=6 && hour < 9) headstr = tmp2 + "🌝︎︎ &nbsp;" + headstr + ", mornin" + "</a>";
+ if (hour >=9 && hour < 17) headstr = tmp2 + "🌞︎︎ &nbsp;" + headstr + tmp + " day" + "</a>";
+ if (hour >=17 && hour < 22) headstr = tmp2 + "🌛 &nbsp;" + headstr + ", evenin" + "</a>";
+
+ return headstr;
+}
+
+document.getElementById("head").innerHTML = headinit();
+
+for (i = 0; i < start.length; i++) {
+ start[i]=String(dateobj1) + start[i];
+}
+for (i = 0; i < finish.length; i++) {
+ finish[i]=String(dateobj1) + finish[i];
+}
+
+lesson =45;
+
+for (i = 0; i < start.length; i++) {
+ if (hour > 15) break;
+ a=new Date(start[i]);
+ x=new Date(finish[i]);
+ passed=Math.round((actualdate-a)/1000/60);
+ if (passed>0 && passed<lesson) {
+  blink=(lesson-passed)*60;
+ //alert(a + " "+actualdate);
+ document.styleSheets[0].insertRule(".b"+day+startid[i]+" { animation: blinker 1s linear " + blink + " }", 0);
+  //alert(lesson-passed);
+  break;
+ } else {
+  d=new Date(start[i+1]);
+  f=Math.round((d-a)/1000/60)-lesson;
+  if (passed>lesson+f || passed < 0) continue;
+  if (passed<lesson+f && i < start.length-1) {
+   blink=(lesson+f-passed)*60;
+   //alert(lesson+f-passed);
+document.styleSheets[0].insertRule(".b"+day+startid[i+1]+" { animation: blinker 1s linear " + blink + " }", 0);
+   //alert("!" +passed);
+  }
+ }
+}
+</script>
+
+</div>
+</div>
+</body></html>
